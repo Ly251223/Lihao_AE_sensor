@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0075)http://www.pacjapan.com/pacjapan_ae%20technique/pacjapan_ae%20Analysis.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 9.0.0.0 for Windows">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>AEの評価方法</title>
+<script language="JavaScript">
+<!--HPB_SCRIPT_ROV_50
+//
+//  Licensed Materials - Property of IBM
+//  5724I83
+//  (C) Copyright IBM Corp. 1995, 2004 All Rights Reserved.
+//
+
+// HpbImgPreload:
+//
+function HpbImgPreload()
+{
+  var appVer=parseInt(navigator.appVersion);
+  var isNC=false,isN6=false,isIE=false;
+  if (document.all && appVer >= 4) isIE=true; else
+    if (document.getElementById && appVer > 4) isN6=true; else
+      if (document.layers && appVer >= 4) isNC=true;
+  if (isNC||isN6||isIE)
+  {
+    if (document.images)
+    {
+      var imgName = HpbImgPreload.arguments[0];
+      var cnt;
+      swImg[imgName] = new Array;
+      for (cnt = 1; cnt < HpbImgPreload.arguments.length; cnt++)
+      {
+        swImg[imgName][HpbImgPreload.arguments[cnt]] = new Image();
+        swImg[imgName][HpbImgPreload.arguments[cnt]].src = HpbImgPreload.arguments[cnt];
+      }
+    }
+  }
+}
+// HpbImgFind:
+//
+function HpbImgFind(doc, imgName)
+{
+  for (var i=0; i < doc.layers.length; i++)
+  {
+    var img = doc.layers[i].document.images[imgName];
+    if (!img) img = HpbImgFind(doc.layers[i], imgName);
+    if (img) return img;
+  }
+  return null;
+}
+// HpbImgSwap:
+//
+function HpbImgSwap(imgName, imgSrc)
+{
+  var appVer=parseInt(navigator.appVersion);
+  var isNC=false,isN6=false,isIE=false;
+  if (document.all && appVer >= 4) isIE=true; else
+    if (document.getElementById && appVer > 4) isN6=true; else
+      if (document.layers && appVer >= 4) isNC=true;
+  if (isNC||isN6||isIE)
+  {
+    if (document.images)
+    {
+      var img = document.images[imgName];
+      if (!img) img = HpbImgFind(document, imgName);
+      if (img) img.src = imgSrc;
+    }
+  }
+}
+var swImg; swImg=new Array;
+//-->
+</script><script language="JavaScript">
+<!--HPB_SCRIPT_PLD_50
+HpbImgPreload('_HPB_ROLLOVER8', 'file:///H:/SATA01/PACJAPAN_COM/pacjapan_new/製品情報_m_image4.gif', 'file:///H:/SATA01/PACJAPAN_COM/pacjapan_new/製品情報_n_image4.gif');
+HpbImgPreload('_HPB_ROLLOVER4', 'ae products_n_image.gif', 'ae products_m_image.gif');
+HpbImgPreload('_HPB_ROLLOVER5', 'ae inspection service_n_image.gif', 'ae inspection service_m_image.gif');
+HpbImgPreload('_HPB_ROLLOVER6', 'ae technique info_m_image2.gif', 'ae technique info_n_image2.gif');
+HpbImgPreload('_HPB_ROLLOVER2', 'sitemap_n_image1.gif', 'sitemap_m_image1.gif');
+HpbImgPreload('_HPB_ROLLOVER3', 'contact_n_image.gif', 'contact_m_image.gif');
+//-->
+</script><script language="JavaScript">
+<!--HPB_SCRIPT_CODE_40
+function _HpbShowObj(lId)
+{
+  var ob;ob=new Array;
+  var appVer=parseInt(navigator.appVersion);
+  var isNC=false,isN6=false,isIE=false;
+  if (document.all && appVer >= 4) isIE=true; else
+    if (document.getElementById && appVer > 4) isN6=true; else
+      if (document.layers && appVer >= 4) isNC=true;
+  if (isNC)
+  {
+    w_str = "document." + lId;ob[lId] = eval(w_str);
+    if (!ob[lId]) ob[lId] = _HpbFindHiddenObj(document, lId);
+    if (ob[lId]) ob[lId].visibility = "show";
+  }
+  if (isN6)
+  {
+    ob[lId] = document.getElementById(lId);
+    ob[lId].style.visibility = "visible";
+  }
+  if (isIE)
+  {
+    w_str = "document.all.item(\"" + lId + "\").style";ob[lId] = eval(w_str);
+    ob[lId].visibility = "visible";
+  }
+}
+
+function _HpbFindHiddenObj(doc, lId)
+{
+  for (var i=0; i < doc.layers.length; i++)
+  {
+    var w_str = "doc.layers[i].document." + lId;
+    var obj;obj=new Array;
+    obj[lId] = eval(w_str);
+    if (!obj[lId]) obj[lId] = _HpbFindHiddenObj(doc.layers[i], lId);
+    if (obj[lId]) return obj[lId];
+  }
+  return null;
+}
+//-->
+</script><script language="JavaScript">
+<!--HPB_SCRIPT_CODE_40
+function _HpbHideObj(lId)
+{
+  var ob;ob=new Array;
+  var appVer=parseInt(navigator.appVersion);
+  var isNC=false,isN6=false,isIE=false;
+  if (document.all && appVer >= 4) isIE=true; else
+    if (document.getElementById && appVer > 4) isN6=true; else
+      if (document.layers && appVer >= 4) isNC=true;
+  if (isNC)
+  {
+    w_str = "document." + lId;ob[lId] = eval(w_str);
+    if (!ob[lId]) ob[lId] = _HpbFindShownObj(document, lId);
+    if (ob[lId]) ob[lId].visibility = "hide";
+  }
+  if (isN6)
+  {
+    ob[lId] = document.getElementById(lId);
+    ob[lId].style.visibility = "hidden";
+  }
+  if (isIE)
+  {
+    w_str = "document.all.item(\"" + lId + "\").style";ob[lId] = eval(w_str);
+    ob[lId].visibility = "hidden";
+  }
+}
+
+function _HpbFindShownObj(doc, lId)
+{
+  for (var i=0; i < doc.layers.length; i++)
+  {
+    var w_str = "doc.layers[i].document." + lId;
+    var obj;obj=new Array;
+    obj[lId] = eval(w_str);
+    if (!obj[lId]) obj[lId] = _HpbFindShownObj(doc.layers[i], lId);
+    if (obj[lId]) return obj[lId];
+  }
+  return null;
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+TD{
+  visibility : visible;
+  line-height : 1.2em;
+}
+P{
+  line-height : 2em;
+  
+}
+TABLE{
+  line-height : 1.2em;
+}
+-->
+</style>
+</head>
+<body>
+<center>
+<table border="0" width="900">
+  <tbody>
+    <tr>
+      <td colspan="15" height="5"></td>
+    </tr>
+    <tr>
+      <td colspan="15" bgcolor="#ffffff" height="30" align="center"><b><font size="+3">マテックス建材株式会社</font></b></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<center>
+<table cellspacing="0" cellpadding="0" width="900">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" colspan="8" height="30"></td>
+    </tr>
+    <tr>
+      <td width="130" bgcolor="#ffffff" valign="middle" colspan="2">
+      <p><a href="https://mateken.co.jp/" id="_HPB_ROLLOVER1" onmouseout="HpbImgSwap(&#39;_HPB_ROLLOVER1&#39;, &#39;company_n_image.gif&#39;);" onmouseover="HpbImgSwap(&#39;_HPB_ROLLOVER1&#39;, &#39;company_m_image.gif&#39;);"><img border="0" name="_HPB_ROLLOVER1" src="./AEの評価方法_files/company_n_image.gif"></a></p>
+</td>
+      <td width="130" bgcolor="#ffffff" valign="middle"><a href="http://www.pacjapan.com/pacjapan_ae_products.html" id="_HPB_ROLLOVER4" onmouseout="HpbImgSwap(&#39;_HPB_ROLLOVER4&#39;, &#39;ae products_n_image.gif&#39;);" onmouseover="HpbImgSwap(&#39;_HPB_ROLLOVER4&#39;, &#39;ae products_m_image.gif&#39;);"><img border="0" name="_HPB_ROLLOVER4" src="./AEの評価方法_files/ae products_n_image.gif"></a></td>
+      <td width="130" bgcolor="#ffffff" valign="middle">
+      <p><a href="http://www.pacjapan.com/pacjapan_ae%20service.html" id="_HPB_ROLLOVER5" onmouseout="HpbImgSwap(&#39;_HPB_ROLLOVER5&#39;, &#39;ae inspection service_n_image.gif&#39;);" onmouseover="HpbImgSwap(&#39;_HPB_ROLLOVER5&#39;, &#39;ae inspection service_m_image.gif&#39;);"><img border="0" name="_HPB_ROLLOVER5" src="./AEの評価方法_files/ae inspection service_n_image.gif"></a></p>
+</td>
+      <td width="130" bgcolor="#ffffff" valign="middle"><a href="http://www.pacjapan.com/pacjapan_ae%20information.html" id="_HPB_ROLLOVER6" onmouseout="HpbImgSwap(&#39;_HPB_ROLLOVER6&#39;, &#39;ae technique info_m_image2.gif&#39;);" onmouseover="HpbImgSwap(&#39;_HPB_ROLLOVER6&#39;, &#39;ae technique info_n_image2.gif&#39;);"><img src="./AEの評価方法_files/ae technique info_m_image2.gif" width="144" height="35" border="0" name="_HPB_ROLLOVER6"></a></td>
+      <td width="130" bgcolor="#ffffff" valign="middle"><a href="mailto:sales@pacjapan.com" id="_HPB_ROLLOVER3" onmouseout="HpbImgSwap(&#39;_HPB_ROLLOVER3&#39;, &#39;contact_n_image.gif&#39;);" onmouseover="HpbImgSwap(&#39;_HPB_ROLLOVER3&#39;, &#39;contact_m_image.gif&#39;);"><img border="0" name="_HPB_ROLLOVER3" src="./AEの評価方法_files/contact_n_image.gif"></a></td>
+      <td width="130" bgcolor="#ffffff" valign="middle" colspan="2"><a href="http://www.pacjapan.com/pacjapan_sitemap.html" id="_HPB_ROLLOVER2" onmouseout="HpbImgSwap(&#39;_HPB_ROLLOVER2&#39;, &#39;sitemap_n_image1.gif&#39;);" onmouseover="HpbImgSwap(&#39;_HPB_ROLLOVER2&#39;, &#39;sitemap_m_image1.gif&#39;);"><img border="0" name="_HPB_ROLLOVER2" src="./AEの評価方法_files/sitemap_n_image1.gif"></a></td>
+    </tr>
+    <tr>
+      <td colspan="8" height="20"></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<center>
+<table cellspacing="0" cellpadding="2" width="900">
+  <tbody>
+    <tr>
+      <td colspan="7"><font size="-1" face="Arial"><a href="http://www.pacjapan.com/index.html"><b>Home</b></a> </font><font size="-1">＞ </font><a href="http://www.pacjapan.com/pacjapan_ae%20information.html"><font size="-1"></font><b><font size="-1">AE技術情報</font></b></a>＞ <font size="-1"><b>AEの評価方法</b></font></td>
+    </tr>
+    <tr>
+      <td colspan="7" align="center" height="20"></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<center>
+<table cellspacing="0" cellpadding="2" width="900" height="1" style="line-height : 1.2em;">
+  <tbody>
+    <tr>
+      <td colspan="6"><b>アコースティックエミッション（AE）の評価項目</b>
+      <hr size="1" style="color : #0069d2;background-color : #0069d2;">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6" height="10"></td>
+    </tr>
+    <tr>
+      <td colspan="6"><font color="#0069d2"><font color="#0069d2"><b>●　</b></font></font><b></b><font size="-1"><b>波形形状（Waveform）</b></font></td>
+    </tr>
+    <tr>
+      <td colspan="6"></td>
+    </tr>
+    <tr valign="top">
+      <td colspan="6" align="left" style="line-height : 1.2em;" height="36" width="732">
+      <ul>
+        <li><font size="-1" style="line-height : 1.2em;">立ち上がりが鋭く減衰する波形を突発型と言い、亀裂進展に関する典型的な波形形状を示す。</font>
+        </li><li><font size="-1" style="line-height : 1.2em;">連続的な波形を連続型と言い、摩擦・磨耗に関する典型的な波形形状を示す。</font>
+      </li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6" height="10"></td>
+    </tr>
+    <tr>
+      <td colspan="6" height="3" valign="top"><b><font color="#0069d2" size="+1"><font size="+0">●　</font></font></b><font size="-1"><b>発生数（Hits）</b></font></td>
+    </tr>
+    <tr>
+      <td colspan="6"></td>
+    </tr>
+    <tr>
+      <td colspan="6" height="0" valign="top" align="left"><font size="-1" style="line-height : 1.2em;">1個の亀裂が進展すると1個のAEが発生する。すなわち、AEの発生数は亀裂の進行数と相関がある。</font></td>
+    </tr>
+    <tr>
+      <td colspan="6" height="8"></td>
+    </tr>
+    <tr>
+      <td colspan="6" height="20"><b><font color="#0069d2" size="+1"><font size="+0">●　</font></font><font size="-1">振　幅（Amplitude）</font></b></td>
+    </tr>
+    <tr>
+      <td colspan="6"></td>
+    </tr>
+    <tr>
+      <td colspan="6" height="0"><font size="-1" style="line-height : 1.2em;">AEの振幅は単位時間あたりに進行する亀裂の距離と相関がある。</font></td>
+    </tr>
+    <tr>
+      <td colspan="6" height="10"></td>
+    </tr>
+    <tr>
+      <td colspan="6"><b><font color="#0069d2" size="+1"><font size="+0">●　</font></font><font size="-1">エネルギー（Energy）</font></b></td>
+    </tr>
+    <tr>
+      <td colspan="6"></td>
+    </tr>
+    <tr>
+      <td colspan="6"><font size="-1" style="line-height : 1.2em;">亀裂の面積が大きくなればAE波形の面積が大きくなる。このAE波形の面積をAEのエネルギーと言い、亀裂の面積と相関がある。</font></td>
+    </tr>
+    <tr>
+      <td colspan="6" height="10"></td>
+    </tr>
+    <tr>
+      <td colspan="6"><b><font color="#0069d2" size="+1"><font size="+0">●　</font></font><font size="-1">周波数（Frequency）</font></b></td>
+    </tr>
+    <tr>
+      <td colspan="6"></td>
+    </tr>
+    <tr>
+      <td colspan="6"><font size="-1" style="line-height : 1.2em;">AEの周波数は材料により決定される。例えば、軸受鋼（SUJ2）の亀裂進展時に発生するAEは100kHz～300kHzに特徴がある。</font></td>
+    </tr>
+    <tr>
+      <td colspan="6" height="10"></td>
+    </tr>
+    <tr>
+      <td colspan="6" style="line-height : 1.2em;" align="center"><img src="./AEの評価方法_files/AEWave.jpg" width="760" height="154" border="0"></td>
+    </tr>
+    <tr>
+      <td colspan="6" align="center"><font size="-1" style="line-height : 1.2em;">a)突発型AE波形　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　b)連続型AE波形</font></td>
+    </tr>
+    <tr>
+      <td colspan="6" height="20"></td>
+    </tr>
+    <tr>
+      <td colspan="6" align="left"><b><font size="-1"><font color="#0069d2"><font size="+0">●　</font></font>位置標定（Location）</font></b></td>
+    </tr>
+    <tr>
+      <td colspan="6"></td>
+    </tr>
+    <tr>
+      <td colspan="6" align="left" width="732"><font size="-1" style="line-height : 1.2em;">下図のように</font><font size="-1">計測対象にAEセンサを2個設置すると、AE発生位置により各AEセンサへ到達するAEの時間に時間差Δt=t2-tが生じる。このΔtを計測すると、下式の計算からAEの発生位置を特定することができる。AEセンサを3個設置するれば平面の位置を4個以上設置すれば立体の位置を知ることができる。ここでCはAEのAEの音速である。</font></td>
+    </tr>
+    <tr>
+      <td colspan="6"></td>
+    </tr>
+    <tr>
+      <td colspan="6" align="center"><img src="./AEの評価方法_files/AELocation.jpg" width="760" height="239" border="0"></td>
+    </tr>
+    <tr>
+      <td colspan="6" height="20"></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<center>
+<table cellspacing="0" cellpadding="2" width="900">
+  <tbody>
+    <tr>
+      <td>
+      <hr size="1" width="900" align="center">
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><b><font size="-1" face="Arial">Copyright © 2022 mateken.co.jp</font></b></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<center></center>
+
+</body></html>
